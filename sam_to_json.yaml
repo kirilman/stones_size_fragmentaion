@@ -1,0 +1,4 @@
+path2samlabel: /storage/reshetnikov/stone_fractions/dataset/sam_pred/v1
+path2yolo: /storage/reshetnikov/stone_fractions/dataset/sam_pred/v1
+path2image: '/storage/reshetnikov/stone_fractions/dataset/sam_pred/res'
+path2savejson: '/storage/reshetnikov/stone_fractions/dataset/sam_pred/v1_anno.json'

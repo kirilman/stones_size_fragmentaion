@@ -1,0 +1,5 @@
+path2anno: /storage/reshetnikov/stone_fractions/dataset/sam_pred/add_fract_test.json
+path2yoloformat: /storage/reshetnikov/stone_fractions/dataset/sam_pred/kpnt2/
+path2image: /storage/reshetnikov/stone_fractions/dataset/sam_pred/images/
+path2savefold: /storage/reshetnikov/stone_fractions/dataset/sam_pred/fold/
+random_seed: 1
