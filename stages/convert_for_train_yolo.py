@@ -25,7 +25,7 @@ if __name__ == "__main__":
     )
     args = parser.parse_args()
     config = load_config(args.config)
-    coco2box_keypoints(config["path2anno"], config["path2yoloformat"])
+    # coco2box_keypoints(config["path2anno"], config["path2yoloformat"])
     k_fold_split_yolo(
         config["path2yoloformat"],
         config["path2image"],

@@ -33,10 +33,10 @@ if __name__ == "__main__":
         path_image=config["input"],
         path_save_json=config["path2savejson"],
     ).convert()
-    # add old annotation
-    merge_anno(
-        config["merge"]["path2df_old"],
-        ["new_anno", "old_anno"],
-        config["input"],
-        config["merge"]["path2_dfmerge"],
-    )
+    # # add old annotation
+    # merge_anno(
+    #     config["merge"]["path2df_old"],
+    #     ["new_anno", "old_anno"],
+    #     config["input"],
+    #     config["merge"]["path2_dfmerge"],
+    # )
