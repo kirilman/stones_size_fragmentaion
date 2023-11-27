@@ -6,24 +6,28 @@ crop_n_points_downscale_factor:
 crop_nms_thresh: 
 crop_overlap_ratio: 0.9
 device: 'cuda'
-input: '/storage/reshetnikov/stone_fractions/dataset/sam_pred/res'
+input: '/storage/reshetnikov/stone_fractions/dataset/sam_pred/train'
 min_mask_region_area: 
 model_type: 'vit_h'
-output: '/storage/reshetnikov/stone_fractions/dataset/sam_pred/v1'
+output: '/storage/reshetnikov/stone_fractions/dataset/sam_pred/train/sam'
 points_per_batch: 
-points_per_side: 84 
+points_per_side: 64
 pred_iou_thresh: 0.3
 stability_score_offset: 
-stability_score_thresh: 0.85
+stability_score_thresh: 0.9
 path2yolo: "/storage/reshetnikov/runs/yolov8/yolov8x_fold_0/weights/best.pt"
 iou_tresh: 0.6
-yolo_score: 0.25
-path2savejson: '/storage/reshetnikov/stone_fractions/dataset/sam_pred/new_anno/result.json'
+yolo_score: 0.3
+path2savejson: '/storage/reshetnikov/stone_fractions/dataset/sam_pred/train/sam/anno.json'
 
 merge: 
-  path1: /storage/reshetnikov/stone_fractions/dataset/sam_pred/v1
-  path2: /storage/reshetnikov/stone_fractions/dataset/sam_pred/v2
-  path2save: /storage/reshetnikov/stone_fractions/dataset/sam_pred/merge
+  #path1: /storage/reshetnikov/stone_fractions/dataset/sam_pred/v1
+  #path2: /storage/reshetnikov/stone_fractions/dataset/sam_pred/v2
+  #path2save: /storage/reshetnikov/stone_fractions/dataset/sam_pred/merge
+  path1:     /storage/reshetnikov/stone_fractions/dataset/sam_pred/train/sam
+  path2:     /storage/reshetnikov/stone_fractions/dataset/sam_pred/train/sam  
+  path2save: /storage/reshetnikov/stone_fractions/dataset/sam_pred/train/merge
+  
   path2df_old: /storage/reshetnikov/stone_fractions/dataset/sam_pred/
   path2_dfmerge: /storage/reshetnikov/stone_fractions/dataset/sam_pred/merge_v2.json
-  iou_tresh: 0.05
+  iou_tresh: 1.1
